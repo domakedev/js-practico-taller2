@@ -26,7 +26,6 @@ main{
     border-radius:10px;
     border: solid 1px #222;
     overflow: hidden;
-    position: relative;
 }
 
 .card__precioInicial, .card__precioFinal{
@@ -36,6 +35,7 @@ main{
     background-color:#222;
     font-family: cursive;
 }
+
 
 .card__descuento{
     border-radius: 100%;
@@ -49,19 +49,30 @@ main{
     justify-content:center;
     align-items:center;
     text-align:center;
-    font-size:3rem;
+    font-size:2.5rem;
     font-family: cursive;
     color: white;
 }
 
 .card__precioInicial{
     text-decoration: line-through;
-
 }
 
-.card__precioInicial::line-through{
-    color: red;
+button{
+    padding:15px;
+    background-color:  rgb(72, 158, 255);
+    color: #fff;
+    font-size:2rem;
+    border-radius: 15px;
+    outline:none;
+    border: none;
+    cursor: pointer;
 }
+
+button:hover{
+    background-color:  rgb(58, 127, 207);
+}
+
 
 
 
