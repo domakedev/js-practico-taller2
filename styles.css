@@ -31,7 +31,7 @@ main{
 }
 
 .card{
-    width: 100%;
+    /* width: 400px; */
     border-radius:10px;
     border: solid 1px #222;
     overflow: hidden;
@@ -43,7 +43,7 @@ main{
 }
 .card__precioInicial, .card__precioFinal{
     text-align:center;
-    font-size:3rem;
+    font-size:2rem;
     color: #ddd;
     background-color:#222;
     font-family: cursive;
@@ -52,8 +52,8 @@ main{
 
 .card__descuento{
     border-radius: 100%;
-    width: 10rem;
-    height: 10rem;
+    width: 7rem;
+    height: 7rem;
     background-color: tomato;
     position: absolute;
     top: -5%;
@@ -62,16 +62,16 @@ main{
     justify-content:center;
     align-items:center;
     text-align:center;
-    font-size:2.5rem;
+    font-size:2rem;
     font-family: cursive;
     color: white;
     transition: all 1s;
 }
 
 .card__descuento:hover{
-    width: 15rem;
-    height: 15rem;
-    font-size:3.5rem;
+    width: 10rem;
+    height: 10rem;
+    font-size:2.5rem;
     background-color: #222;
 }
 
