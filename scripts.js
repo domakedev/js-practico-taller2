@@ -1,10 +1,27 @@
-const calcularPreciofinal = () => {
+const calcularPreciofinalBTN = () => {
     let precioInicial = document.querySelector('#dataIn__precioOriginal').value
     let descuento = document.querySelector('#dataIn__descuento').value
+    let cupon= document.querySelector('#dataIn__cupon').value
 
     let precioFinal
 
     if (precioInicial && descuento<=100) {
+
+        switch (cupon) {
+            case "lunes":
+                descuento = descuento + 10
+                break;
+            case "loki":
+                descuento = descuento + 20
+                break;
+            case "wendy":
+                descuento = descuento + 30
+                break;               
+            default:
+                descuento = descuento
+                break;
+        }
+
         precioFinal = precioInicial*((100-descuento)/100)
         printInitialPrice(precioInicial)
         printResult(precioFinal)
