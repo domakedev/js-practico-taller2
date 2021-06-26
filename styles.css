@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+main{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+}
+
+.dataOut{
+    position: relative;
+    margin: 20px auto;
+
+}
+
+.card{
+    border-radius:10px;
+    border: solid 1px #222;
+    overflow: hidden;
+    position: relative;
+}
+
+.card__precioInicial, .card__precioFinal{
+    text-align:center;
+    font-size:3rem;
+    color: #ddd;
+    background-color:#222;
+    font-family: cursive;
+}
+
+.card__descuento{
+    border-radius: 100%;
+    width: 10rem;
+    height: 10rem;
+    background-color: tomato;
+    position: absolute;
+    top: -5%;
+    right: -10%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    font-size:3rem;
+    font-family: cursive;
+    color: white;
+}
+
+.card__precioInicial{
+    text-decoration: line-through;
+
+}
+
+.card__precioInicial::line-through{
+    color: red;
+}
+
+
+
+
