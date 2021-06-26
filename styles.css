@@ -8,26 +8,39 @@ html{
     font-size: 62.5%;
 }
 
-main{
+body {
     display: flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
     height:100vh;
+    width: 100%;
 }
+
+main{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
 
 .dataOut{
     position: relative;
     margin: 20px auto;
-
 }
 
 .card{
+    width: 100%;
     border-radius:10px;
     border: solid 1px #222;
     overflow: hidden;
 }
 
+.card__imagen{
+    width: 300px;
+    height: auto;
+}
 .card__precioInicial, .card__precioFinal{
     text-align:center;
     font-size:3rem;
