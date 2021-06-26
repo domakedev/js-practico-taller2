@@ -59,6 +59,7 @@ main{
     width: 15rem;
     height: 15rem;
     font-size:3.5rem;
+    background-color: #222;
 }
 
 .card__precioInicial{
