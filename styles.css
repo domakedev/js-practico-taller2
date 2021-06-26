@@ -52,6 +52,13 @@ main{
     font-size:2.5rem;
     font-family: cursive;
     color: white;
+    transition: all 1s;
+}
+
+.card__descuento:hover{
+    width: 15rem;
+    height: 15rem;
+    font-size:3.5rem;
 }
 
 .card__precioInicial{
