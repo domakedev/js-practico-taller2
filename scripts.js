@@ -10,16 +10,22 @@ const calcularPreciofinal = () => {
         printResult(precioFinal)
         printDiscount(descuento)
     } else if (descuento>=100){
-        printResult("Demasiado %")
+        printAlert("Demasiado Descuento")
     } else {
-        printResult("Faltan datos")
+        printAlert("Faltan datos")
     }
 }
 
 const printResult = (info) => {
     let preciofinalNode = document.querySelector('.card__precioFinal')
 
-    preciofinalNode.textContent = `Precio final:${info}`
+    preciofinalNode.textContent = `Precio final: ${info.toFixed(2)}🎉`
+}
+
+const printAlert = (info) => {
+    let preciofinalNode = document.querySelector('.card__precioFinal')
+
+    preciofinalNode.textContent = info+"❗"
 }
 
 const printDiscount = (discount) => {
